@@ -1,0 +1,139 @@
+:root {
+  --color1: #290052;
+  --color2: #adff00;
+}
+
+body{
+    background-color: var(--color1);
+    min-height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin-top: 32px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--color2);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input{
+    display: block;
+    margin: auto auto 60px auto;
+    background-color: rgba(237, 237, 237, 1);
+    width: 600px;
+    height: 20px;
+    border-radius: 15px;
+    outline: 0;
+    padding: 8px 17px 8px 17px;
+    font-size: 20px;    
+    color: #364f00
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    margin: auto auto 80px;
+    flex: 1;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction:row;
+    width: 750px;
+    margin-bottom: 35px;
+    padding: 10px;
+}
+
+.a1{
+    display: flex;
+    width: 730px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.line:hover{
+    box-shadow: none;
+    box-sizing: none;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.check{
+    width: 24px;
+    height: 24px;
+    position: relative;
+
+}
+
+.check:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    background-color: var(--color2);
+    cursor: pointer;
+  }
+
+  .check:checked::before{
+    content: url(../../components/img/check.png);
+  }
+
+p {
+    font-size: 18px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.line:hover >.close{
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 1px;
+}
+
+.close{
+    background-color: transparent;
+    color: transparent;
+    border: none;
+}
+
+
+::-webkit-input-placeholder  { color:rgba(54, 79, 0, 0.5); }
+input:-moz-placeholder { color:rgba(54, 79, 0, 0.5); }
+textarea:-moz-placeholder { color:rgba(54, 79, 0, 0.5); }
+
+footer{
+    position: fixed;
+    bottom: 0; 
+    width: 100%; 
+    z-index: 999; 
+    background-color: var(--color1);
+}
+
+
+hr{
+   border-color: rgba(237, 237, 237, 0.5);
+  
+}
+
+
+#bin{
+    
+    margin: 12px auto;
+    cursor: pointer;
+    width: 29px;
+    display: block;
+}
